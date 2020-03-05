@@ -53,7 +53,7 @@ def plot_image_Accumulated(filename,resultDst,Title,dateEnd):
     #lists = np.loadtxt(filename,delimiter=',',unpack=True)
     date2num = mdate.strpdate2num('%Y-%m-%d')
     reader = csv.reader(open(filename))
-    x = []
+    x = [] 
     y1 = []
     y2 = []
     y3 = []
@@ -193,7 +193,7 @@ def plot_image_special(filename,resultDst,Title,dateEnd):
     
     b2.append(y2[0]-0) 
     for i in range(len(y2)-1):
-        m = (y2[i+1] +m1 - y2[i]) 	#后者减前者(当日疑似病例减去(前日疑似+今日确诊))
+        m = (y2[i+1] - y2[i]) 	#后者减前者(当日疑似病例减去(前日疑似+今日确诊))
         b2.append(m)	#添加元素到新列表
     print(b2)
     print(len(y2),len(b2))

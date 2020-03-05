@@ -161,10 +161,10 @@ def filter_date(filename,resultfile, dateRange):
     num = 0 
     #dateRange1 = int( date2num(dateRange) - date2num('2019-12-01'));    num = num1 = 0
     k = 0
-    sum_temp1 = [0] * 100
-    sum_temp2 = [0] * 100
-    sum_temp3 = [0] * 100
-    sum_temp4 = [0] * 100
+    sum_temp1 = [0] * 150  # five months
+    sum_temp2 = [0] * 150
+    sum_temp3 = [0] * 150
+    sum_temp4 = [0] * 150
     j = 0 
 #    sum_date = []
     for line in reader:
