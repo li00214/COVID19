@@ -45,14 +45,14 @@ def plot_image(resultDst,x,y1,y2,y3,y4,Title,dateEnd):
     plt.ylabel(u'人数')
     #plt.legend(loc=2,prop={'family':'SimHei','size':12}) # loc=2 : upper left
     plt.savefig(resultDst, dpi=100)
-    plt.draw()
-    plt.show()
+#    plt.draw()
+#    plt.show()
 
 
 def plot_image_Accumulated(filename,resultDst,Title,dateEnd):
     #lists = np.loadtxt(filename,delimiter=',',unpack=True)
     date2num = mdate.strpdate2num('%Y-%m-%d')
-    reader = csv.reader(open(filename))
+    reader = csv.reader(open(filename,encoding='utf-8'))
     x = [] 
     y1 = []
     y2 = []
@@ -98,29 +98,29 @@ def plot_image_Accumulated(filename,resultDst,Title,dateEnd):
     for i in range(len(y1)-1):
         m = y1[i+1] + y3[i+1] - y1[i] 	#后者减前者
         b1.append(m)	#添加元素到新列表
-    print(b1)
-    print(len(y1),len(b1))
+#    print(b1)
+#    print(len(y1),len(b1))
     
     b2.append(y2[0]-0) 
     for i in range(len(y2)-1):
         m = y2[i+1] - y2[i] 	#后者减前者
         b2.append(m)	#添加元素到新列表
-    print(b2)
-    print(len(y2),len(b2))
+#    print(b2)
+#    print(len(y2),len(b2))
     
     b3.append(y3[0]-0) 
     for i in range(len(y3)-1):
         m = y3[i+1] - y3[i] 	#后者减前者
         b3.append(m)	#添加元素到新列表
-    print(b3)
-    print(len(y3),len(b3))
+#    print(b3)
+#    print(len(y3),len(b3))
     
     b4.append(y4[0]-0) 
     for i in range(len(y4)-1):
         m = y4[i+1] - y4[i] 	#后者减前者
         b4.append(m)	#添加元素到新列表
-    print(b4)
-    print(len(y4),len(b4))    
+#    print(b4)
+#    print(len(y4),len(b4))    
     
     Title2 = Title + '较前日新增确诊、疑似、治愈和死亡人数情况'    
     resultDst2 = resultDst+'_increase_image.jpg'
@@ -130,7 +130,7 @@ def plot_image_Accumulated(filename,resultDst,Title,dateEnd):
     
 def plot_image_special(filename,resultDst,Title,dateEnd):
     date2num = mdate.strpdate2num('%Y-%m-%d')
-    reader = csv.reader(open(filename))
+    reader = csv.reader(open(filename,encoding='utf-8'))
     x = []
     y1 = []
     y2 = []
@@ -171,9 +171,9 @@ def plot_image_special(filename,resultDst,Title,dateEnd):
     y4.extend(yF4)
     
     
-    print(y1)
-    print(y2)
-    print(len(y1))
+#    print(y1)
+#    print(y2)
+#    print(len(y1))
     
     Title1 = Title + '累计确诊、疑似、治愈和死亡人数情况'
     resultDst1 = resultDst+'_accumulated_image.jpg'
@@ -188,29 +188,29 @@ def plot_image_special(filename,resultDst,Title,dateEnd):
     for i in range(len(y1)-1):
         m1 = (y1[i+1] + y3[i+1] - y1[i]) 	#后者减前者
         b1.append(m1)	#添加元素到新列表
-    print(b1)
-    print(len(y1),len(b1))
+#    print(b1)
+#    print(len(y1),len(b1))
     
     b2.append(y2[0]-0) 
     for i in range(len(y2)-1):
         m = (y2[i+1] - y2[i]) 	#后者减前者(当日疑似病例减去(前日疑似+今日确诊))
         b2.append(m)	#添加元素到新列表
-    print(b2)
-    print(len(y2),len(b2))
+#    print(b2)
+#    print(len(y2),len(b2))
     
     b3.append(y3[0]-0) 
     for i in range(len(y3)-1):
         m = (y3[i+1] - y3[i]) 	#后者减前者
         b3.append(m)	#添加元素到新列表
-    print(b3)
-    print(len(y3),len(b3))
+#    print(b3)
+#    print(len(y3),len(b3))
     
     b4.append(y4[0]-0) 
     for i in range(len(y4)-1):
         m = (y4[i+1] - y4[i]) 	#后者减前者
         b4.append(m)	#添加元素到新列表
-    print(b4)
-    print(len(y4),len(b4))    
+#    print(b4)
+#    print(len(y4),len(b4))    
     
     Title2 = Title + '新增确诊、疑似、治愈和死亡人数情况'    
     resultDst2 = resultDst+'_increase_image.jpg'
@@ -219,43 +219,43 @@ def plot_image_special(filename,resultDst,Title,dateEnd):
 #      
 
 def plot_image_auto_coutry(filename,dateEnd,dateTitle):
-    readerC = csv.reader(open(filename))
+    readerC = csv.reader(open(filename,encoding='utf-8'))
     for line in readerC:
         dstFile = 'Country/'+line[2]+'' 
         readFile = 'Country/'+line[2]+'.csv'
-        print(dstFile) 
+#        print(dstFile) 
         plot_image_Accumulated(readFile,dstFile,dateTitle+line[0],dateEnd)
 
 
 def plot_image_auto_province(filename,dateEnd,dateTitle):
-    readerC = csv.reader(open(filename))
+    readerC = csv.reader(open(filename,encoding='utf-8'))
     for line in readerC:
         dstFile = 'Province/'+line[2]+'' 
         readFile = 'Province/'+line[2]+'.csv'
-        print(dstFile) 
+#        print(dstFile) 
         plot_image_Accumulated(readFile,dstFile,dateTitle+line[0],dateEnd)
 
 def plot_image_FULL(filename,dateEnd,dateTitle):
         dstFile = 'DateOrder/FULL' 
-        print(dstFile) 
+#        print(dstFile) 
         dateTitle = dateTitle + '全球' 
         plot_image_special(filename,dstFile,dateTitle,dateEnd)
 
 def plot_image_foreign(filename,dateEnd,dateTitle):
         dstFile = 'DateOrder/FullForeign' 
-        print(dstFile) 
+#        print(dstFile) 
         dateTitle = dateTitle + '国外' 
         plot_image_special(filename,dstFile,dateTitle,dateEnd)
 
 def plot_image_china(filename,dateEnd,dateTitle):
         dstFile = 'DateOrder/FullChina' 
-        print(dstFile) 
+#        print(dstFile) 
         dateTitle = dateTitle + '全国' 
         plot_image_special(filename,dstFile,dateTitle,dateEnd)
 
 def plot_image_without_hubei(filename,dateEnd,dateTitle):
         dstFile = 'DateOrder/WithoutHubei' 
-        print(dstFile) 
+#        print(dstFile) 
         dateTitle = dateTitle + '非湖北' 
         plot_image_special(filename,dstFile,dateTitle,dateEnd)
 
@@ -274,6 +274,6 @@ def main_plot(filename,dateEnd,dateTitle):
 #    dateEnd='2020-03-03'
 #    dateTitle='20191201-20200303'
 #    date2num = mdate.strpdate2num('%Y-%m-%d')
-#    plot_image_Accumulated('Hanguo.csv','Hanguo', dateTitle+'韩国', dateEnd)
+#    plot_image_Accumulated('Republic of Korea.csv','Republic of Korea', dateTitle+'韩国', dateEnd)
 #    plot_image_Accumulated('Hubei.csv','Hubei', dateTitle+'湖北', dateEnd)
 #    plot_image_Accumulated('Beijing.csv','Beijing',dateTitle+'北京',dateEnd)
