@@ -26,7 +26,7 @@ if __name__ == '__main__':
 #    plot_image_auto_province('ProvinceCode.csv',dateEnd, dateTitle)
 #    print('--------------------- Image Ploting End-----------------------------')
     
-    main_plot(fileNameOfAll,dateTime,dateTitle)
+#    main_plot(fileNameOfAll,dateTime,dateTitle)
     print('--------------------- Image Ploting End-----------------------------')
 #    main_plot(fileNameOfAll,dateTime,dateTitle)
     

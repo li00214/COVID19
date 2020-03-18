@@ -331,7 +331,11 @@ def main_data_prepare(fileNameOfAll, dateTime):
     get_province('ProvinceCode.csv',fileNameOfAll)
     get_country('CountryCode.csv',fileNameOfAll)     
  
-#if __name__ == '__main__':
+if __name__ == '__main__':
+    
+    fileNameOfAll='Wuhan-2019-nCoV.csv'
+    filter_foreign(fileNameOfAll,'Country/The Republic of Namibia.csv','The Republic of Namibia')
+    
 #    filter_China('Wuhan-2019-nCoV.csv','Province/Xizang.csv','540000')  
 #    confirm_date('2020-01-02', float(737394) ) 
 #    print('---------------------------------EEEEEEEEEEEEEEEEE------------------------')
