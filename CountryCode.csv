@@ -1,20 +1,44 @@
 安道尔,AD,Andorra
 阿联酋,AE,United Arab Emirates
 阿富汗,AF,Afghanistan
+安提瓜和巴布达,AG,Antigua and Barbuda
+阿尔巴尼亚,AL,Albania
 亚美尼亚,AM,Armenia
 阿根廷,AR,Argentina
 奥地利,AT,Austria
 澳大利亚,AU,Australia
+阿鲁巴,AW,Aruba
 阿塞拜疆,AZ,Azerbaijan
+巴巴多斯,BB,Barbados
 比利时,BE,Belgium
+孟加拉国,BD,Bangladesh
+布基纳法索,BF,Burkina Faso
+保加利亚,BG,Bulgaria
 巴林,BH,Bahrain
+波黑,BIH,Bosnia and Herzegovina
+贝宁,BJ,Benin
+圣巴泰勒米,BL,Saint Barthélemy
+文莱,BN,Brunei Darussalam
+玻利维亚,BO,Bolivia Plurinational State of
 巴西,BR,Brazil
+巴哈马,BS,Bahamas
+不丹,BT,Bhutan
 白俄罗斯,BY,Belarus
 加拿大,CA,Canada
 瑞士,CH,Switzerland
+刚果（金）,CD,Congo Democratic Republic of
+中非,CF,Central African Republic
+刚果（布）,CG,Congo
+科特迪瓦,CI,Côte d'Ivoire
 智利,CL,Chile
+喀麦隆,CM,Cameroon
+哥伦比亚,CO,Colombia
+哥斯达黎加,CR,Costa Rica
+古巴,CU,Cuba
+塞浦路斯,CY,Cyprus
 捷克,CZ,Czechia
 德国,DE,Germany
+吉布提,DJ,Djibouti
 丹麦,DK,Denmark
 多米尼加,DO,Dominican Republic
 阿尔及利亚,DZ,Algeria
@@ -22,12 +46,30 @@
 爱沙尼亚,EE,Estonia
 埃及,EG,Egypt
 西班牙,ES,Spain
+埃塞俄比亚,ET,Ethiopia
 芬兰,FI,Finland
+法罗群岛,FO,Faroe Islands
 法国,FR,France
+加蓬,GA,Gabon
 英国,GB,United Kingdom
 格鲁吉亚,GE,Georgia
 希腊,GR,Greece
+法属圭亚那,GF,French Guiana
+加纳,GH,Ghana
+直布罗陀,GI,Gibraltar
+格陵兰,GL,Greenland
+冈比亚,GM,Gambia
+几内亚,GN,Guinea
+瓜德罗普,GP,Guadeloupe
+赤道几内亚,GQ,Equatorial Guinea
+希腊,GR,Greece
+危地马拉,GT,Guatemala
+关岛,GU,Guam
+圭亚那,GY,Guyana
+洪都拉斯,HN,Honduras
 克罗地亚,HR,Croatia
+匈牙利,HU,Hungary
+印度尼西亚,IDN,The Republic of Indonesia
 爱尔兰,IE,Ireland
 以色列,IL,Israel
 印度,IN,India
@@ -35,19 +77,31 @@
 伊朗,IR,Iran
 冰岛,IS,Iceland
 意大利,IT,Italy
+牙买加,JM,Jamaica
 约旦,JO,Jordan
 日本,JP,Japan
+肯尼亚,KE,Kenya
+吉尔吉斯斯坦,KG,Kyrgyzstan
 柬埔寨,KH,Cambodia
 韩国,KR,Republic of Korea
 科威特,KW,Kuwait
+开曼群岛,KY,Cayman Islands
+哈萨克斯坦,KZ,Kazakhstan
 黎巴嫩,LB,Lebanon
+圣卢西亚,LC,Saint Lucia
+列支敦士登,LI,Liechtenstein
 斯里兰卡,LK,Sri Lanka
 立陶宛,LT,Lithuania
 卢森堡,LU,Luxembourg
 拉脱维亚,LV,Latvia
 摩洛哥,MA,Morocco
 摩纳哥,MC,Monaco
+摩尔多瓦,MD,Moldova Republic of
+黑山,ME,Montenegro
 北马其顿,MK,North Macedonia
+马提尼克,MQ,Martinique
+马耳他,MT,Malta
+马尔代夫,MV,Maldives
 墨西哥,MX,Mexico
 马来西亚,MY,Malaysia
 尼日利亚,NG,Nigeria
@@ -56,33 +110,57 @@
 尼泊尔,NP,Nepal
 新西兰,NZ,New Zealand
 阿曼,OM,Oman
+巴拿马,PA,Panama
+秘鲁,PE,Peru
+法属波利尼西亚,PF,French Polynesia
 菲律宾,PH,Philippines
 巴基斯坦,PK,Pakistan
+波兰,PL,Poland
+波多黎各,PR,Puerto Rico
+巴勒斯坦,PS,Palestine State of
 葡萄牙,PT,Portugal
+巴拉圭,PY,Paraguay
 卡塔尔,QA,Qatar
 罗马尼亚,RO,Romania
+留尼汪,RE,Réunion
+塞尔维亚,RS,Serbia
 俄罗斯,RU,Russian Fede
+卢旺达,RW,Rwanda
 沙特阿拉伯,SA,Saudi Arabia
+塞舌尔,SC,Seychelles
+苏丹,SD,Sudan
 瑞典,SE,Sweden
 新加坡,SG,Singapore
-圣马力诺,SM,San Marino
-塞内加尔,SN,Senegal
-泰国,TH,Thailand
-突尼斯,TN,Tunisia
-乌克兰,UA,Ukraine
-美国,US,United States
-越南,VN,Viet Nam
-不丹,BT,Bhutan
-喀麦隆,CM,Cameroon
-直布罗陀,GI,Gibraltar
-匈牙利,HU,Hungary
-列支敦士登,LI,Liechtenstein
-波兰,PL,Poland
-巴勒斯坦,PS,Palestine State of
-塞尔维亚,RS,Serbia
 斯洛文尼亚,SI,Slovenia
 斯洛伐克,SK,Slovakia
+圣马力诺,SM,San Marino
+塞内加尔,SN,Senegal
+索马里,SO,Somalia
+苏里南,SR,Suriname
+斯威士兰,SZ,Eswatini
+多哥,TG,Togo
+泰国,TH,Thailand
+突尼斯,TN,Tunisia
+土耳其,TR,Turkey
+特立尼达和多巴哥,TT,Trinidad and Tobago
+坦桑尼亚,TZ,Tanzania, United Republic of
+乌克兰,UA,Ukraine
+美国,US,United States
+乌拉圭,UY,Uruguay
+乌兹别克斯坦,UZ,Uzbekistan
 梵蒂冈,VA,Holy See
-南非,ZA,South Africa
-波黑,BIH,Bosnia and Herzegovina
-印度尼西亚,IDN,The Republic of Indonesia
+圣文森特和格林纳丁斯,VC,Saint Vincent and the Grenadines
+委内瑞拉,VE,Venezuela Bolivarian Republic of
+美属维尔京群岛,VI,Virgin Islands U.S.
+越南,VN,Viet Nam
+马约特,YT,Mayotte
+南非,ZA,,South Africa
+赞比亚,ZM,Zambia
+纳米比亚,NAM,The Republic of Namibia
+钻石公主号邮轮,,Ship of jewel
+蒙古,MNG,Mongolia
+荷属安的列斯,,Netherlands Antilles
+圣马丁,,Saint Martin
+泽西岛,,Bailiwick of Jersey
+格恩西岛,,Bailiwick of Guernsey
+毛利塔尼亚,MRT,The Islamic Republic of Mauritania
