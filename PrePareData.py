@@ -161,10 +161,10 @@ def filter_date(filename,resultfile, dateRange):
     num = 0 
     #dateRange1 = int( date2num(dateRange) - date2num('2019-12-01'));    num = num1 = 0
     k = 0
-    sum_temp1 = [0] * 150  # five months
-    sum_temp2 = [0] * 150
-    sum_temp3 = [0] * 150
-    sum_temp4 = [0] * 150
+    sum_temp1 = [0] * 200  # five months
+    sum_temp2 = [0] * 200
+    sum_temp3 = [0] * 200
+    sum_temp4 = [0] * 200
     j = 0 
 #    sum_date = []
     for line in reader:
@@ -334,7 +334,12 @@ def main_data_prepare(fileNameOfAll, dateTime):
 if __name__ == '__main__':
     
     fileNameOfAll='Wuhan-2019-nCoV.csv'
-    filter_foreign(fileNameOfAll,'Country/The Republic of Namibia.csv','The Republic of Namibia')
+#    filter_foreign(fileNameOfAll,'Country/The Republic of Namibia.csv','The Republic of Namibia')
+
+    dateTime='2020-03-21'
+    get_full_foreign(fileNameOfAll)
+    filter_date('FullWithoutChina/FullWithoutChina.csv','DateOrder/TimeTestFullForeign.csv', dateTime)
+    
     
 #    filter_China('Wuhan-2019-nCoV.csv','Province/Xizang.csv','540000')  
 #    confirm_date('2020-01-02', float(737394) ) 

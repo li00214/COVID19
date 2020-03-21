@@ -14,9 +14,9 @@ if __name__ == '__main__':
 #    get_province('ProvinceCode.csv','Wuhan-2019-nCoV.csv')
 #    get_country('CountryCode.csv','Wuhan-2019-nCoV.csv')   
     fileNameOfAll='Wuhan-2019-nCoV.csv'
-    dateTime='2020-03-20'
-    dateTitle='20191201-20200320'
-#    main_data_prepare(fileNameOfAll, dateTime)
+    dateTime='2020-03-21'
+    dateTitle='20191201-20200321'
+    main_data_prepare(fileNameOfAll, dateTime)
     
     print('---------------------- Data Pre-processing End ---------------------')
     
