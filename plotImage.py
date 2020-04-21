@@ -152,7 +152,7 @@ def plot_image_special(filename,resultDst,Title,dateEnd):
         yF2.append(float(line[2]))   #suspected
         yF3.append(float(line[3]))   #cured
         yF4.append(float(line[4]))   #dead   
-    print(xF,yF1)
+#    print(xF,yF1)
         
     if xF[0] > float(737394):
         for i in range(0, int (xF[0] - float(737394)) ):
@@ -276,8 +276,10 @@ def main_plot(filename,dateEnd,dateTitle):
 #For testing
 if __name__ == '__main__':
     fileNameOfAll='Wuhan-2019-nCoV.csv'
-    dateTime='2020-03-18'
-    dateTitle='20191201-20200318'    
+    dateTime='2020-04-21'
+    dateTitle='20191201-20200421'  
+    
+    
 #    plot_image_Accumulated('Country/Bailiwick of Jersey.csv','Bailiwick of Jersey', dateTitle+'泽西岛', dateTime)
 #    plot_image_Accumulated('Country/Bailiwick of Guernsey.csv','Bailiwick of Guernsey', dateTitle+'格恩西岛', dateTime)
 #    plot_image_Accumulated('Country/Ship of jewel.csv','Ship of jewel', dateTitle+'钻石公主号邮轮', dateTime)
@@ -286,11 +288,11 @@ if __name__ == '__main__':
 #    plot_image_Accumulated('Country/Saint Martin.csv','Saint Martin', dateTitle+'圣马丁', dateTime)
 #    plot_image_Accumulated('Country/The Islamic Republic of Mauritania.csv','The Islamic Republic of Mauritania', dateTitle+'毛利塔尼亚', dateTime)
 #    plot_image_Accumulated('Country/The Republic of Namibia.csv','The Republic of Namibia', dateTitle+'纳米比亚', dateTime)
-
+#
     plot_image_FULL('DateOrder/TimeTestFULL.csv',dateTime,dateTitle)
-    plot_image_china('DateOrder/TimeTestFullChina.csv',dateTime,dateTitle)
-    plot_image_without_hubei('DateOrder/TimeTestWithoutHubei.csv',dateTime,dateTitle)
-    plot_image_foreign('DateOrder/TimeTestFullForeign.csv',dateTime,dateTitle)    ####bug in  datetime
+#    plot_image_china('DateOrder/TimeTestFullChina.csv',dateTime,dateTitle)
+#    plot_image_without_hubei('DateOrder/TimeTestWithoutHubei.csv',dateTime,dateTitle)
+#    plot_image_foreign('DateOrder/TimeTestFullForeign.csv',dateTime,dateTitle)    ####bug in  datetime
 
 
 #    dateEnd='2020-03-03'
