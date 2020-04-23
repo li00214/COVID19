@@ -9,13 +9,16 @@ from matplotlib.ticker import MultipleLocator
 from matplotlib.ticker import FormatStrFormatter
 from plotImage import main_plot,plot_image_foreign
 from PrePareData import main_data_prepare
+from datetime import date
 
 if __name__ == '__main__':
 #    get_province('ProvinceCode.csv','Wuhan-2019-nCoV.csv')
 #    get_country('CountryCode.csv','Wuhan-2019-nCoV.csv')   
     fileNameOfAll='Wuhan-2019-nCoV.csv'
-    dateTime='2020-04-22'
-    dateTitle='20191201-20200422'
+    dateTime =  str(date.today())
+#    dateTime='2020-04-22'
+    dateTitle='自 2019-12-01 到 ' + dateTime + ' '
+#    20200422'
     main_data_prepare(fileNameOfAll, dateTime)
     
     print('---------------------- Data Pre-processing End ---------------------')
